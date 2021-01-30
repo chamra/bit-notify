@@ -1,0 +1,10 @@
+.Nav {
+    background-color: #404552 !important;
+    display: flex !important;
+    justify-content: center !important;
+    
+}
+
+.Nav a{
+    color: #ffffff !important;
+}
