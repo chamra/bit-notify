@@ -3,21 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.2",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
+    "firebase": "^8.2.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-notify-toast": "^0.5.1",
     "react-scripts": "4.0.1",
     "reactstrap": "^8.9.0",
+    "reapop": "^3.0.3",
     "web-vitals": "^0.2.4"
-  },
-  "proxy": {
-    "*": {
-      "target": " https://europe-west1-bit-notify.cloudfunctions.net"
-    }
   },
   "scripts": {
     "start": "react-scripts start",

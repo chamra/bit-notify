@@ -1,6 +1,6 @@
 const {db} = require('../helpers/admin');
 
-const limit = 2
+const limit = 5
 
 
 const getAnnouncements = async (req, res) => {
