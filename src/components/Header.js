@@ -47,8 +47,6 @@ const Header = (props) => {
                 vapidKey: "BLk3S9e7cU4uTwrd5lNkQfdd22J8rXGWx754FwVZOrsAdA2_QwAyuFS8hne1GFD5TQvahnTZ-Vdw2QkbZ_fchnM"
             })
 
-            console.log(token);
-
             await axios.post("https://europe-west1-bit-notify.cloudfunctions.net/api/subscribe", {
                 deviceId: token
             })
@@ -71,9 +69,9 @@ const Header = (props) => {
                 <NavbarBrand href="/">
                     BIT NOTIFY
                 </NavbarBrand>
-                <NavbarText>
+                <NavbarText onClick={() => subscribe()}>
                     Subscribe
-                    <img onClick={() => subscribe()} src={bell} alt="subscribe" title="subscribe to get notifications" />
+                    <img  src={bell} alt="subscribe" title="subscribe to get notifications" />
                 </NavbarText>
             </Navbar>
         </div>
