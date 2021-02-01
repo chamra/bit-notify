@@ -16,8 +16,8 @@ Bit announcement update notifier 🔔
 
 
 -----
-Icons used is the app are by blew designs 
+Icons used is the app are by below designers  
 
  <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
- 
+
 <a href="https://www.freepik.com" title="Freepik">Freepik</a>
