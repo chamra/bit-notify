@@ -1,4 +1,4 @@
-# BIT NOTIFY
+# [BIT NOTIFY](https://bit-notify.web.app/)
 
 Bit announcement update notifier
 

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useState } from 'react'
+import React from 'react'
 import {Container, Row, Col, Button} from 'reactstrap';
 import ListItem from './ListItem';
 import './ListContainer.css';
@@ -20,7 +20,7 @@ class ListContainer extends React.Component {
             isLoading: true
         })
 
-        const { error , isLoading, news} = this.state
+        const {news} = this.state
 
         let localNews = news
 
@@ -68,7 +68,7 @@ class ListContainer extends React.Component {
 
     render () {
 
-        const { error , isLoading, news} = this.state
+        const { isLoading, news} = this.state
 
 
             return (

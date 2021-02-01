@@ -7,6 +7,22 @@
     color: #ffffff !important;
 }
 
-img {
+img.bell {
     cursor: pointer;
+    animation: 0.5s wiggle infinite linear;
+}
+
+@keyframes wiggle {
+  0% {
+      transform: rotate(0deg) translateY(0px);
+  }
+  50% {
+      transform: rotate(40deg) ;
+  }
+  75% {
+      transform: rotate(-40deg) ;
+  }
+  100% {
+      transform: rotate(0deg) translateY(0px);
+  }
 }

@@ -13,6 +13,7 @@ import axios from 'axios';
 import Notifications, {notify} from 'react-notify-toast';
 
 
+
 const firebaseConfig = {
     apiKey: "AIzaSyA_FVvvqm0I6YS7qSeRnrwyE08VGPA3JX4",
     authDomain: "bit-notify.firebaseapp.com",
@@ -70,8 +71,7 @@ const Header = (props) => {
                     BIT NOTIFY
                 </NavbarBrand>
                 <NavbarText onClick={() => subscribe()}>
-                    Subscribe
-                    <img  src={bell} alt="subscribe" title="subscribe to get notifications" />
+                    <img  src={bell} alt="subscribe" className="bell" title="subscribe to get notifications" />
                 </NavbarText>
             </Navbar>
         </div>
