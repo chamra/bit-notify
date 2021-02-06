@@ -15,9 +15,10 @@ const broadcastNotification = async (announcement, id) => {
 
     let sent = await admin.messaging().sendToDevice(registrationTokens, {
         notification: {
-            title: '"BIT NOTIFY : New Announcement"',
+            title: 'BIT NOTIFY : New Announcement',
             body: announcement.title,
-            icon: "/logo512.png"
+            icon: "/logo512.png",
+            clickAction: "https://bit-notify.web.app/"
         },
     })
 

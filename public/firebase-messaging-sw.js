@@ -26,7 +26,8 @@ messaging.setBackgroundMessageHandler(function (payload) {
     console.log(payload);
 
     var options = {
-        icon: '/logo512.png'
+        icon: '/logo512.png',
+        click_action: "https://bit-notify.web.app/"
     };
 
     return self.registration.showNotification("BIT NOTIFY : New Announcement", options);

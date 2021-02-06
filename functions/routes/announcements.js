@@ -21,9 +21,9 @@ const getAnnouncements = async (req, res) => {
 
 const startAnnouncementsAt = async (res, doc = null) => {
 
-    let snapShot = await db.collection('announcements').orderBy('postDate', 'DESC').limit(limit).get();
+    let snapShot = await db.collection('announcements').orderBy('createAt', 'DESC').limit(limit).get();
 
-    if (doc !== null) snapShot =  await db.collection('announcements').orderBy('postDate', 'DESC').startAfter(doc).limit(limit).get();
+    if (doc !== null) snapShot = await db.collection('announcements').orderBy('createAt', 'DESC').startAfter(doc).limit(limit).get();
 
     return res.json(formatAnnouncements(snapShot));
 }
